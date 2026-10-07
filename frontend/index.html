@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Book Exchange</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Campus Book Exchange Portal</h1>
+    <p>List textbooks you want to swap and request books from fellow students.</p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>List a Book for Exchange</h2>
+      <form id="addBookForm">
+        <input type="text" id="title" placeholder="Book Title" required />
+        <input type="text" id="author" placeholder="Author" required />
+        <input type="text" id="edition" placeholder="Edition (e.g., 3rd Ed.)" />
+        <select id="condition">
+          <option value="New">New</option>
+          <option value="Good" selected>Good</option>
+          <option value="Fair">Fair</option>
+          <option value="Poor">Poor</option>
+        </select>
+        <input type="number" id="owner_id" placeholder="Your Student ID (use 1 for test)" required />
+        <button type="submit">Publish Listing</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Available Books</h2>
+      <div id="booksGrid" class="grid"></div>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
