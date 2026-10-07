@@ -49,4 +49,4 @@ jobs:
         with:
           app-name: 'bookexchange-portal-dmc'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_48BEF316C13E48528AE365BD6DAFD52E }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}
